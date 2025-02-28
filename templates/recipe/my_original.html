@@ -1,0 +1,78 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+    <title>{{ title }}</title>
+</head>
+
+<body class="bg-creme text-textColor">
+    <div class="fixed z-50 bottom-8 right-10 h-min flex flex-row items-end align-bottom font-content">
+        <h3 class="pr-2 text-sm italic mb-[.09rem]">{{ category }}</h3>
+        <h3 class="font-bold text-xl text-end self-end">{{ page_number }}</h3>
+    </div>
+    <div class="fixed left-0 w-screen grow h-screen py-6 pr-6">
+        <div
+            class="flex flex-1 flex-col h-full pr-8 pl-12 border-t-2 border-b-2 border-r-2 border-slate-900 font-content">
+
+            <h1 class="pt-8 text-3xl font-semibold font-titles">{{ title }}</h1>
+            <div class="flex flex-row justify-center text-sm w-fit pt-0">
+                <p class="font-semibold">Courtesy Of:&ThinSpace;</p>
+                <p> {{ attribution }} </p>
+            </div>
+
+            <div class="divide-y-2 divide-gray-400 text-xs">
+                <div class="pt-2 pl-4 pb-2">
+                    <ul class="list-disc grid grid-cols-2 max-h-1/4">
+                        {% for ingredient in ingredients %}
+                        <li>{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="pt-2 leading-normal">
+                    <ul class="list-decimal marker:font-bold">
+
+                        {% for step in steps %}
+                        <li>{{ step }}</li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+
+            </div>
+
+            {% if show_notes %}
+            <div class="h-full flex flex-col justify-end w-4/5 text-xs pb-2">
+
+                <hr class="border-gray-500 pb-1">
+                <!-- <div class="border-t-1 border-gray-400 pb-2"></div> -->
+                <p>{{ notes }}</p>
+
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+</body>
+
+
+
+<!-- <div class="pt-2 flex flex-row divide-x-2 text-sm w-fit divide-gray-400">
+                <div class="flex flex-row pr-[.25rem] justify-center">
+                    <p class="font-semibold pr-[.25rem]">Time: </p>
+                    <p>{{ total_time }}</p>
+                </div>
+                <div class="flex flex-row pr-[.25rem] pl-[.25rem] justify-center">
+                    <p class="font-semibold pr-[.25rem]">Work Time: </p>
+                    <p>{{ cook_time }}</p>
+                </div>
+                <div class="flex flex-row pr-[.25rem] pl-[.25rem] justify-center">
+                    <p class="font-semibold pr-[.25rem]">Quantity: </p>
+                    <p>{{ quantity }}</p>
+                </div>
+
+            </div> -->

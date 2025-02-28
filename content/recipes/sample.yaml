@@ -1,0 +1,42 @@
+meta:
+  - title: Andrew's Grandma's Banana Bread
+  - preamble: lorem ipsum
+  - author: Luke Gabel
+  - attribution: Andrew's Grandma
+  # the list of steps can be displayed in ol, (1., 2., 3. ...) or ul (-..., -..., -..., ...)
+  # should default to ol
+  - step_format: ol
+  - tags:
+      - idk
+      - food
+      - etc
+  - category: edible
+  - notes:
+      - this is a modified version of the original, see apendix
+
+sections:
+  - batter
+  - topping
+
+ingredients:
+  - bananas:
+      quantity: 3
+      name: Bananas
+      note: extra ripe
+      section: batter
+  - flour:
+      quantity: 2
+      unit: cups
+      name: Bananas
+      section: topping
+
+# {} to refrence an ingredient, preceded by # to include the quantity, ex: {#bananas}
+# {refrence|nickname} to refer to the ingredient with a nickname, ex:
+# TODO: consider adding option to just capitalize the first letter or pluralize word
+# TODO: any raw langauge sections should support single line markdown
+steps:
+  - batter:
+      - peel the {#bananas|b-dogs}
+      - add the {bananas}
+  - topping:
+      - add the topping to the thing

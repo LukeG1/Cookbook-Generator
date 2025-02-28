@@ -1,0 +1,51 @@
+meta:
+  - title: Chorizo Potato Tacos
+  - preamble: lorem ipsum
+  - author: Luke Gabel
+  - attribution: no one really
+  - category: mexican
+  - notes:
+      - I always use mini tortillas for this, makes for a way more fun eating expierience, and green salsa or lime is a must
+
+sections:
+  - batter
+  - topping
+
+ingredients:
+  - bananas:
+      quantity: 3
+      name: Bananas
+      note: extra ripe
+      section: batter
+  - flour:
+      quantity: 2
+      unit: cups
+      name: Bananas
+      section: topping
+  - chorizo:
+    name: chorizo
+    quantity: 1/2
+    unit: lbs
+  - potato:
+    name: potato
+    quantity: 1
+  - olive_oil:
+    name: olive oil
+  - vinegar:
+    name: vinegar
+  - sour_cream:
+    name: sour cream
+  - green_salsa:
+    name: green salsa
+
+steps:
+  - main:
+      - Set a medium pot of water to boil
+      - Chop the {#potato} into chunks, I tend to do 4 planks then cut those into cubes, with a small potato this shold result in a good sized chunk.
+      - Put the chopped potato in the water and add a splah of {vinegar}, this is optional but will make the potatoes easier to handle later for chemistry reasons.
+      - Put your {#chorizo} in a cold pan and set the heat to medium - medium high, doing this will allow more of the fat to render out.
+      - Cook the {chorizo} and use a spatual to break it up into bite sized pieces, but not to the point that it is all small pieces.
+      - When the {potato|potatoes} are just able to be pierced by a fork with some pressure, move the chorizo to a plate, drain the potatoes, and add them back to the pan with the chorizo fat.
+      - Cook the potatoes, moving them around until all sides are dark and crispy, you will need to add more oil as you go but not much.
+      - once the pototes are almost crispy enough to your liking add back in the chorizo and let it all cook togerher to warm back up.
+      - Plate to your liking, I reccomend a layer of sour cream to hold everything together, then the mixture, then some green salsa.
