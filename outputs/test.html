@@ -25,51 +25,70 @@
         }
       </script>
 
-    <title>{{ recipe.meta.title }}</title>
+    <title>Chorizo Potato Tacos</title>
 </head>
 
 <body class="bg-creme text-textColor">
     <div class="fixed z-50 bottom-8 right-10 h-min flex flex-row items-end align-bottom font-content">
-        <h3 class="pr-2 text-sm italic mb-[.09rem]">{{ recipe.meta.category }}</h3>
-        <h3 class="font-bold text-xl text-end self-end">{{ page_number }}</h3>
+        <h3 class="pr-2 text-sm italic mb-[.09rem]">mexican</h3>
+        <h3 class="font-bold text-xl text-end self-end">17</h3>
     </div>
     <div class="fixed left-0 w-screen grow h-screen py-6 pr-6">
         <div
             class="flex flex-1 flex-col h-full pr-8 pl-12 border-t-2 border-b-2 border-r-2 border-slate-900 font-content">
 
-            <h1 class="pt-8 text-3xl font-semibold font-titles">{{ recipe.meta.title }}</h1>
+            <h1 class="pt-8 text-3xl font-semibold font-titles">Chorizo Potato Tacos</h1>
             <div class="flex flex-row justify-center text-sm w-fit pt-0">
                 <p class="font-semibold">Courtesy Of:&ThinSpace;</p>
-                <p> {{ recipe.meta.attribution }} </p>
+                <p> no one really </p>
             </div>
 
             <div class="divide-y-2 divide-gray-400 text-xs">
                 <div class="pt-2 pl-4 pb-2">
                     <ul class="list-disc grid grid-cols-2 max-h-1/4">
-                        {% for ingredient in recipe.ingredients %}
-                        <li>{{ ingredient.name }}</li>
-                        {% endfor %}
+                        
+                        <li>chorizo</li>
+                        
+                        <li>potato</li>
+                        
+                        <li>olive oil</li>
+                        
+                        <li>vinegar</li>
+                        
+                        <li>sour cream</li>
+                        
+                        <li>green salsa</li>
+                        
                     </ul>
                 </div>
 
                 <div class="pt-2 leading-normal">
                     <ul class="list-decimal marker:font-bold">
-                        {% for step in recipe.steps.main %}
-                        <li>{{ step }}</li>
-                        {% endfor %}
+                        
+                        <li>Set a medium pot of water to boil</li>
+                        
+                        <li>Chop the {#potato} into chunks, I tend to do 4 planks then cut those into cubes, with a small potato this shold result in a good sized chunk.</li>
+                        
+                        <li>Put the chopped potato in the water and add a splah of {vinegar}, this is optional but will make the potatoes easier to handle later for chemistry reasons.</li>
+                        
+                        <li>Put your {#chorizo} in a cold pan and set the heat to medium - medium high, doing this will allow more of the fat to render out.</li>
+                        
+                        <li>Cook the {chorizo} and use a spatual to break it up into bite sized pieces, but not to the point that it is all small pieces.</li>
+                        
+                        <li>When the {potato|potatoes} are just able to be pierced by a fork with some pressure, move the chorizo to a plate, drain the potatoes, and add them back to the pan with the chorizo fat.</li>
+                        
+                        <li>Cook the potatoes, moving them around until all sides are dark and crispy, you will need to add more oil as you go but not much.</li>
+                        
+                        <li>once the pototes are almost crispy enough to your liking add back in the chorizo and let it all cook togerher to warm back up.</li>
+                        
+                        <li>Plate to your liking, I reccomend a layer of sour cream to hold everything together, then the mixture, then some green salsa.</li>
+                        
                     </ul>
                 </div>
 
             </div>
 
-            {% if show_notes %}
-            <div class="h-full flex flex-col justify-end w-4/5 text-xs pb-2">
-
-                <hr class="border-gray-500 pb-1">
-                <p>{{ meta.notes }}</p>
-
-            </div>
-            {% endif %}
+            
 
         </div>
 
@@ -85,15 +104,15 @@
 <!-- <div class="pt-2 flex flex-row divide-x-2 text-sm w-fit divide-gray-400">
                 <div class="flex flex-row pr-[.25rem] justify-center">
                     <p class="font-semibold pr-[.25rem]">Time: </p>
-                    <p>{{ total_time }}</p>
+                    <p></p>
                 </div>
                 <div class="flex flex-row pr-[.25rem] pl-[.25rem] justify-center">
                     <p class="font-semibold pr-[.25rem]">Work Time: </p>
-                    <p>{{ cook_time }}</p>
+                    <p></p>
                 </div>
                 <div class="flex flex-row pr-[.25rem] pl-[.25rem] justify-center">
                     <p class="font-semibold pr-[.25rem]">Quantity: </p>
-                    <p>{{ quantity }}</p>
+                    <p></p>
                 </div>
 
             </div> -->
