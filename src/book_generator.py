@@ -6,16 +6,15 @@ from recipe_interpreter import interpret_recipe
 from html_generator import generate_html
 from html_to_pdf import html_to_pdf
 
+print("Interpreting recipe...")
 recipe = interpret_recipe("chorizo_potato_tacos")
+# print(recipe["meta"])
+print("Generating html...")
 html = generate_html(recipe, "my_original")
-# pdf = html_to_pdf("book_1", html)
 
-from weasyprint import HTML
+with open(f"../outputs/test.html", "w+") as file:
+    file.write(html)
 
-HTML(string="<p>document</p>").write_pdf("../outputs/test.pdf", pdf_variant="pdf/a-3u")
+pdf = html_to_pdf("book_1", html)
 
-# text_file = open("../outputs/test.html", "w+")
-# text_file.write(html)
-# text_file.close()
-
-# print(recipe)
+print("Generating pdf...")

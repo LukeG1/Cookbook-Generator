@@ -1,6 +1,3 @@
-# use jinja templates
-# see https://atufashireen.medium.com/creating-templates-with-jinja-in-python-3ff3b87d6740
-
 from jinja2 import Environment, FileSystemLoader
 
 
